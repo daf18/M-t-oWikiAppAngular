@@ -11,5 +11,5 @@ projet Angular.</p>
 <li>Création d’un header (client)</li>
 <li>Gestion de l’authentification</li>
 <li>Service MongoDB (serveur)</li>
+<li>Blocage des routes (client, serveur)</li>
 </ul>
-<p>Blocage des routes (client, serveur)</p>
