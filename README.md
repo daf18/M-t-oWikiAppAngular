@@ -5,9 +5,11 @@
 <p>Migrer votre application initiale(M-t-oWikiApp) vers un
 projet Angular.</p>
 <br>
-Travail fait:
-<p>Création des components (client)</p>
-<p>Création d’un header (client)</p>
-<p>Gestion de l’authentification</p>
-<p>Service MongoDB (serveur)</p>
+<p><b>Travail fait:</b></p>
+<ul>
+<li>Création des components (client)</li>
+<li>Création d’un header (client)</li>
+<li>Gestion de l’authentification</li>
+<li>Service MongoDB (serveur)</li>
+</ul>
 <p>Blocage des routes (client, serveur)</p>
