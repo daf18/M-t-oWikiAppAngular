@@ -1,0 +1,24 @@
+.container {
+    width:250px; 
+    max-width:250px; 
+    display: inline-block;
+   }
+.footer{
+     font-weight: lighter;
+     font-size: small;
+     padding: 5px;
+}
+fieldset{
+  border: 1px solid darkgray;
+}
+td,th {
+  border-bottom: 1px solid darkgray;
+}
+h5{
+  color: #4b545f;
+  font-weight: lighter;
+  opacity: 0.5;
+}
+h4{
+  padding: 10px;
+}

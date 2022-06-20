@@ -1,0 +1,26 @@
+<h4>{{cities[0].nearest_area[0].areaName[0].value}},{{cities[0].nearest_area[0].region[0].value}},{{cities[0].nearest_area[0].country[0].value}}
+</h4>
+
+
+<div class="container" *ngFor="let hour of cities[0].weather[0].hourly">
+    <fieldset>
+        <table>
+            <tr>
+                <td class="card-header"><strong>Temps: </strong> {{hour.time}}</td>
+            </tr>
+            <tr>
+                <td><strong>Température: </strong> {{hour.tempC}}°C (ressentie
+                    {{hour.FeelsLikeC}}°C)
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Pourcentage de pluie: </strong>{{hour.chanceofrain}}
+            </tr>
+            <tr>
+                <td><strong>Pourcentage de neige: </strong>{{hour.chanceofsnow}}</td>
+            </tr>
+        </table>
+    </fieldset>
+</div>
+<div class="card-footer text-muted fst-italic font-size footer">***Dernière observation:
+    {{cities[0].current_condition[0].localObsDateTime}}</div>

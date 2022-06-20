@@ -1,0 +1,26 @@
+<div class="container" *ngFor="let city of cities">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header fw-bold">
+            {{city.nearest_area[0].areaName[0].value}},{{city.nearest_area[0].region[0].value}},{{city.nearest_area[0].country[0].value}}
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Température: </strong> {{city.current_condition[0].temp_C}}°C (ressentie
+                {{city.current_condition[0].FeelsLikeC}}°C)</li>
+            <li class="list-group-item"><strong>Conditions: </strong>{{city.current_condition[0].weatherDesc[0].value}}
+            </li>
+            <li class="list-group-item"><strong>Vents: </strong>{{city.current_condition[0].windspeedKmph}} Km/h</li>
+
+            <li class="list-group-item"><strong>Visibilité: </strong>{{city.current_condition[0].visibility}} km</li>
+
+            <li class="list-group-item"><strong>UV: </strong>{{city.current_condition[0].uvIndex}}</li>
+
+            <li class="list-group-item"><strong>Humidité: </strong>{{city.current_condition[0].humidity}}%</li>
+
+            <li class="list-group-item"><strong>Précipitations: </strong>{{city.current_condition[0].precipMM}} mm</li>
+        </ul>
+        <div class="card-footer text-muted fst-italic font-size footer">
+            Dernière observation: {{city.current_condition[0].localObsDateTime}} (heure
+            locale)
+        </div>
+    </div>
+</div>

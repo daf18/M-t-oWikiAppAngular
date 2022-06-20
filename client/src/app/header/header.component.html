@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-info navigation">
+    <div class="container-fluid">
+        <img class="logo" src="/assets/logo.svg">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/weather/now">Conditions actuelle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/weather/hourly">Hourly</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/auth">Authentification</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input [(ngModel)]="recherche" name="recherche" class="form-control me-2" type="search"
+                    aria-label="Search" placeholder="rechercher">
+                <button (click)="searchWeather()" class="btn btn-outline-primary btn-sm">Rechercher</button>
+            </form>
+        </div>
+    </div>
+</nav>
