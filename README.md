@@ -2,7 +2,7 @@
 
 <p>Travail programmation web côté serveur.</p>
 <br>
-<p>Migrer votre application initiale(M-t-oWikiApp) vers un
+<p>Migrer l'application initiale(M-t-oWikiApp) vers un
 projet Angular.</p>
 <br>
 <p><b>Travail fait:</b></p>
